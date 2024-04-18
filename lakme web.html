@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .main {
+            text-align: center;
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 11px;
+            color: goldenrod;
+            background-color: black;
+            position: fixed;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.8;
+
+        }
+
+        .icon {
+            z-index: 34;
+        }
+
+
+        .h1 {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            height: 90px;
+            margin-top: 90px;
+            font-size: 18px;
+            border-bottom: 1px solid goldenrod;
+            width: 100%;
+        }
+
+        .h2 {
+            height: 70px;
+            width: 50px;
+            border-color: goldenrod;
+            margin-left: 20px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .h2 img {
+            border-radius: 50%;
+
+        }
+
+        .fun {
+            display: flex;
+            justify-content: center;
+            left: 0px;
+            right: 0px;
+        }
+
+        .p1 {
+            font-size: 30px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .p2 {
+            text-align: center;
+            /* margin-left: 400px; */
+            display: flex;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 30px;
+            width: 250px;
+            align-items: center;
+
+            margin-top: 20px;
+
+        }
+
+        .p4 {
+            margin-left: 40px;
+        }
+
+        .p3 {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 30px;
+            width: 120px;
+            display: flex;
+            padding-left: 10px;
+            align-items: center;
+
+        }
+
+        .header {
+            display: flex;
+            /* margin-left: 100px; */
+            justify-content: center;
+        }
+
+        .fun1 {
+
+            border: 5px solid goldenrod;
+            border-radius: 20px;
+            height: 453px;
+            /* width:270px; */
+            margin-top: 40px;
+            justify-content: center;
+
+        }
+
+        .h3 {
+            font-size: 21px;
+            background-color: black;
+            color: white;
+            height: 150px;
+            width: 270px;
+            padding-top: 50px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        .h5 {
+            background-color: goldenrod;
+            color: white;
+            border: 2px solid goldenrod;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 22px;
+            width: 180px;
+            margin-left: 40px;
+
+        }
+
+        .fun2 {
+            margin-left: 20px;
+            border: 5px solid goldenrod;
+            border-radius: 20px;
+            height: 453px;
+            /* width:270px; */
+            margin-top: 40px;
+
+
+
+
+        }
+
+        .h4 {
+            font-size: 21px;
+            background-color: black;
+            color: white;
+            height: 150px;
+            width: 270px;
+            padding-top: 50px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        .h6 {
+            color: red;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 35px;
+            width: 200px;
+            justify-content: center;
+            padding-top: 5px;
+            margin-top: 50px;
+            /* margin-left:520px ; */
+            font-size: 22px;
+
+        }
+
+        .p5 {
+            margin-top: 30px;
+        }
+
+        .type {
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+
+        }
+
+        .fun3 {
+            height: 251px;
+            width: 230px;
+            border-top-right-radius: 8px;
+            border: 3px solid goldenrod;
+            border-top-left-radius: 8px;
+            margin-left: 20px;
+        }
+
+        .fun4 {
+            height: 251px;
+            width: 230px;
+            border: 3px solid goldenrod;
+            border-top-left-radius: 8px;
+            margin-left: 30px;
+            border-top-right-radius: 8px;
+
+        }
+
+        .h7 {
+            font-size: 21px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* border-top: 1px solid black; */
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-top: -1.5px;
+            width: 226.5px;
+            margin-left: -3.5px;
+        }
+
+        .h8 {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .h9 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fun5 {
+            margin-top: 20px;
+        }
+
+        .h10 {
+            margin-top: 10px;
+            opacity: 0.6;
+
+        }
+
+        .h11 {
+            background-color: brown;
+            color: white;
+            font-size: 21px;
+            text-align: center;
+            margin-top: -2px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+
+        .h12 {
+            background-color: orange;
+            color: white;
+            font-size: 21px;
+            text-align: center;
+            margin-top: -2px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+
+        .h13 {
+            background-color: purple;
+            color: white;
+            font-size: 21px;
+            text-align: center;
+            margin-top: -2px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+
+        .h14 {
+            background-color: darkturquoise;
+            color: white;
+            font-size: 21px;
+            text-align: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin-left: -3px;
+            margin-right: -3px;
+            margin-top: -2px;
+        }
+
+        .g1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fun6 {
+            justify-content: center;
+            border: 5px solid goldenrod;
+            border-radius: 20px;
+            height: 370px;
+            width: 270px;
+            margin-top: 40px;
+        }
+
+        .fun7 {
+            margin-left: 20px;
+            border: 5px solid goldenrod;
+            border-radius: 20px;
+            height: 370px;
+            width: 270px;
+            margin-top: 40px;
+        }
+
+        .head {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            border: 1px solid brown;
+            height: 30px;
+            width: 270px;
+            font-size: 18px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            padding-top: 10px;
+            /* margin-left: 480px; */
+            margin-top: 60px;
+        }
+
+        a {
+            color: red;
+        }
+
+        .fa-bus {
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+
+
+        }
+
+        .fa-user-circle-o {
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+        }
+
+        .fa-search {
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+        }
+
+        .fa-shopping-bag {
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+
+        }
+
+        .fa-bars {
+            color: white;
+            font-size: 25px;
+            padding-left: 25px;
+        }
+
+        .full {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: 0.8;
+            padding-top: 10px;
+            padding-bottom: 11px;
+        }
+
+        .icon {
+            color: white;
+            padding-right: 25px;
+
+        }
+
+        .center {
+
+            justify-content: center;
+            display: flex;
+        }
+
+        .lak {
+            margin: 0px 11px;
+            text-align: justify;
+        }
+    </style>
+    <div class="full">
+
+        <div class="icon"> <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+        <div class="main">LAKME </div>
+
+        <div class="icon">
+            <i class="fa fa-bus" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <i class="fa fa-search" aria-hiddesn="true"></i>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div class="h1">
+
+
+        <div class="h2"><img src="page1.webp" height="50px" width="50px" border="2px" border-radius="100px" />Sale</div>
+        <div class="h2"><img src="page2.webp" height="50px" width="50px" border="2px" border-radius="100px" />Face
+        </div>
+
+        <div class="h2"><img src="page3.avif" height="50px" width="50px" border="2px" border-radius="100px" />Lips</div>
+        <div class="h2"><img src="page4.avif" height="50px" width="50px" border="2px" border-radius="100px" />Eyes
+        </div>
+
+        <div class="h2"><img src="page5.avif" height="50px" width="50px" border="2px" border-radius="100px" />Skin</div>
+        <div class="h2"><img src="page6.webp" height="50px" width="50px" border="2px" border-radius="100px" />Nails
+        </div>
+
+    </div>
+    <div class="fun">
+
+        <img src="page7.webp" width="100%" />
+
+    </div>
+    <div class="p1">Trending Now</div>
+    <div class="h9">your favourite lakme makeup and skin care</div>
+    <div class="center">
+        <div class="p2">
+            <div class="p3">New arrivals
+
+            </div>
+            <div class="p4">bestsellers</div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="fun1">
+            <img src="l1.webp" height="250px" width="250px" />
+            <div class="h3"><span class="lak">Lakme Lip Love Lip Marks</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class="fun2"><img src="l2.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Lip scrub</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class=fun2><img src="l3.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Face Cream</span>
+                <p> $475</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="h6">view all products</div>
+    </div>
+    <p><b>DEALS YOU CAN'T MISS</b></p>
+    <div class="header">
+        <div class="fun1">
+            <img src="l4.webp" height="250px" width="250px" />
+            <div class="h3"><span class="lak">Lakme Lip Love Lip Marks</span>
+                <p>$ 325</p>
+                <p class="h5">VIEW SHADES</p>
+            </div>
+        </div>
+        <div class="fun2"><img src="l5.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Lip scrub</span>
+                <p>$ 325</p>
+                <p class="h5">VIEW SHADES</p>
+            </div>
+        </div>
+        <div class=fun2><img src="l5.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Face Cream</span>
+                <p> $475</p>
+                <p class="h5">WIEW SHADES</p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="h6">view all products</div>
+    </div>
+    <div class="p5"><img src="l7.webp" width="100%" /></div>
+    <p><b>SHOP BY CATEGORY</b>
+    <div class="h9">Glame essentials for everyone</div>
+    </p>
+    <div class="type">
+        <div class="fun3">
+            <img src="l8.avif" height="250px" width="230px" />
+            <div class="h7">ACT THE BASE</div>
+        </div>
+        <div class="fun4">
+            <img src="l9.webp" height="250px" width="230px" />
+            <div class="h7">SHOWSTOPPING SKIN</div>
+        </div>
+        <div class="fun4">
+            <img src="l10.webp" height="250px" width="230px" />
+            <div class="h7">POUT TO CART</div>
+        </div>
+        <div class="fun4">
+            <img src="l11.avif" height="250px" width="230px" />
+            <div class="h7">NAIL IT LIKE A PRO</div>
+        </div>
+    </div>
+    <div class="h8"><b>TOP TO PRODUCTS</b>
+        <div class="h9">Your favourite Lakme Makeup and skin Care</div>
+    </div>
+    <div class="header">
+        <div class="fun1">
+            <img src="la1.webp" height="250px" width="250px" />
+            <div class="h3"><span class="lak">Lakme Lip Love Lip Marks</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class="fun2"><img src="la2.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Lip scrub</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class=fun2><img src="la3.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Face Cream </span>
+                <p> $475</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="h6">view all products</div>
+    </div>
+    <div class="fun5"><img src="la4.webp" height="380px" width="100%" /></div>
+    <div class="h8"><b>YOU'LL LOVE THE SKIN YOU'RE IN</b>
+        <div class="h10">essentials that care for your skin</div>
+    </div>
+    <div class="type">
+        <div class="fun3">
+            <img src="la5.webp" height="251px" width="230px" />
+            <div class="h11"><b>BRIGHTIEN</b></div>
+        </div>
+        <div class="fun4">
+            <img src="la6.webp" height="251px" width="230px" />
+            <div class="h12"><b>GLOW</b></div>
+        </div>
+        <div class="fun4">
+            <img src="la7.webp" height="251px" width="230px" />
+            <div class="h13"><b>AGE REWIND</b></div>
+        </div>
+        <div class="fun4">
+            <img src="la8.webp" height="251px" width="230px" />
+            <div class="h14"><b>HYDRATE</b></div>
+        </div>
+    </div>
+    <div class="h8"><b>RECOMMENDED FOR YOU</b>
+        <div class="h10">skin and makeup essentials we love</div>
+    </div>
+    <div class="header">
+        <div class="fun1">
+            <img src="l1.webp" height="250px" width="250px" />
+            <div class="h3"><span class="lak">Lakme Lip Love Lip Marks</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class="fun2"><img src="l2.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Lip scrub</span>
+                <p>$ 325</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class=fun2><img src="l3.webp" height="250px" width="250px" />
+            <div class="h4"><span class="lak">Lakme Lip Love Face Cream</span>
+                <p> $475</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="h6">view all products</div>
+    </div>
+    <div class="g1"><b>TRY BEFORE YOU BUY</b>
+        <div class="h10">trying makeup was never this easy</div>
+    </div>
+    <div class="header">
+        <div class="fun6">
+            <img src="g1.webp" height="250px" width="250px" />
+            <div>
+                <p>100+ versatile shades to try on!</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class="fun7"><img src="g2.webp" height="250px" width="250px" />
+            <div>
+                <p>find the perfect shade of your skin tone!</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+        <div class=fun7><img src="g3.webp" height="250px" width="250px" />
+            <div>
+                <p>Analyze your skin from any where, anytime!</p>
+                <p class="h5">Add to Bag</p>
+            </div>
+        </div>
+    </div>
+    <div class="h8"><b>JOIN THE CLUB</b>
+        <div class="h10">india's most loved beauty brand</div>
+    </div>
+    <div class="center">
+        <div class="head">SHARE YOUR LOOK</div>
+    </div>
+    <p>Mention <a>@Lakme_India</a> to share reels</p>
+</body>
+
+</html>
